@@ -53,7 +53,7 @@ enum Model {
   RM67162,
 };
 
-class QspiAmoLed : public display::DisplayBuffer,
+class qspi_st6201 : public display::DisplayBuffer,
                    public spi::SPIDevice<spi::BIT_ORDER_MSB_FIRST, spi::CLOCK_POLARITY_LOW, spi::CLOCK_PHASE_LEADING,
                                          spi::DATA_RATE_1MHZ> {
  public:
